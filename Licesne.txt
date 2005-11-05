@@ -1,0 +1,3 @@
+這些檔案是 libchewing project 的一部分
+libchewing 採用 GNU LGPL 授權發佈
+http://www.fsf.org/licensing/licenses/lgpl.html
