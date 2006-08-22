@@ -1,4 +1,4 @@
-%gen_inp
+﻿%gen_inp
 %ename  Phonetic
 %cname  注音
 %selkey  123456789
@@ -9703,6 +9703,7 @@ ai4 驀
 ai4 墨
 ai4 貊
 ai4 磨
+ai4 嘿
 ai4 瘼
 ai4 靺
 ai4 歾
