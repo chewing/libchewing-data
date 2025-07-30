@@ -1,0 +1,8 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "url": "tsi.csv",
+  "dc:title": "內建詞庫",
+  "dc:rights": "Copyright (c) 2025 libchewing Core Team",
+  "dc:license": "LGPL-2.1-or-later",
+  "dc:identifier": "2025.8.1",
+}
