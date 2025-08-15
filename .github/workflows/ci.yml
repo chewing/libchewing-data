@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - "master"
+      - "release/*"
+  pull_request:
+    branches:
+      - "master"
+      - "release/*"
+  merge_group:
+    types: [checks_requested]
+
+env:
+  RUST_VERSION: "1.88"
+  CMAKE_GENERATOR: Ninja
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Syntax Checks
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup dependencies
+        run: |
+          sudo apt-get install ninja-build
+          rustup set auto-self-update disable
+          rustup install ${{ env.RUST_VERSION }}
+          rustup default ${{ env.RUST_VERSION }}
+          cargo install --bin chewing-cli https://github.com/chewing/libchewing
+
+      - name: Build
+        run: |
+          cmake -B build
+          cmake --build build
