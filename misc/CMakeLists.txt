@@ -15,3 +15,5 @@ add_custom_command(
     ${CMAKE_CURRENT_SOURCE_DIR}/symbols.dat
 )
 add_custom_target(misc ALL DEPENDS swkb.dat symbols.dat)
+
+install(FILES swkb.dat symbols.dat DESTINATION ${CMAKE_INSTALL_DATADIR}/libchewing)
