@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.31.6...3.31.6)
-project(libchewing-data VERSION 2026.1.27 LANGUAGES NONE)
+project(libchewing-data VERSION 2026.3.22 LANGUAGES NONE)
 
 if(PROJECT_IS_TOP_LEVEL)
   set(CMAKE_SYSTEM_NAME Generic)
